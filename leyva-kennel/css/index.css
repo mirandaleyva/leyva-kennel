@@ -1,0 +1,24 @@
+.title-index {
+  margin-right: 15%;
+  position: relative;
+  z-index: 1;
+  color: white !important;
+  font-size: 5rem;
+  text-align: right;
+}
+
+.subtitle-index {
+  margin-right: 20%;
+  text-align: right;
+  color: rgb(180, 179, 176) !important;
+}
+
+.index-img {
+  position: relative;
+  margin-left: 10%;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+

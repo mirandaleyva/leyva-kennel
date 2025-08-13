@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Litters</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/litters.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/assets/img/logo-w.svg" alt="logo-white">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <ul class="dropdown-menu">
+            <li><a href="dogs.html#males">Males</a></li>
+            <li><a href="dogs.html#females">Females</a></li>
+            <li><a href="dogs.html#litters">Litters</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <div class="mobile-dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <div class="mobile-dropdown-content">
+            <a href="males.html">Males</a>
+            <a href="females.html">Females</a>
+            <a href="litters.html">Litters</a>
+          </div>
+        </div>
+        <a href="about-us.html">About Us</a>
+        <a href="info.html">About the Breed</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class=" hero is-fullheight">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body hero-image">
+      <!-- <div class="hero-img">
+        <img src="/assets/img/litters/litter-hero.jpg" alt="texto-litters">
+      </div> -->
+      <div class="image-overlay"></div>
+      <div class="container has-text-centered">
+        <p class="title title-litters" style="font-size: 4em;">Current Litters</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <section class="section is-large">
+        <div class="columns-parents">
+          <div class="column-parent">
+            <div class="texto-litters">
+              <h1 class="title title-litters"><u>HERA X KUBA</u></h1>
+              <h2 class="subtitle subtitle-litters" style="margin-top: 10%; margin-bottom: 10%;">
+                A simple container to divide your page into <strong>sections</strong>, like
+                the one you're currently reading.
+              </h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt est ipsa, itaque maiores id non,
+                nostrum perferendis dicta possimus quam mollitia! Aliquid, cumque pariatur. Provident dignissimos
+                voluptatum nemo assumenda.</p>
+            </div>
+          </div>
+          <div class="column-mother">
+            <img id="image-mother" src="/assets/img/hera/DSC00112.jpg" alt="hera">
+          </div>
+          <div class="column-father">
+            <img id="image-father" src="/assets/img/kuba/DSC00052.jpg" alt="kuba">
+          </div>
+        </div>
+        <div class="carousel-container">
+          <!-- Radios -->
+          <input type="radio" name="carousel" id="img1" checked hidden>
+          <input type="radio" name="carousel" id="img2" hidden>
+          <input type="radio" name="carousel" id="img3" hidden>
+          <input type="radio" name="carousel" id="img4" hidden>
+
+          <div class="main-image">
+            <!-- Botones para cada imagen -->
+            <div class="nav-buttons">
+              <!-- Cuando img1 está activo -->
+              <div class="nav img1-nav">
+                <label for="img4" class="prev">&#10094;</label> <!-- ir al último -->
+                <label for="img2" class="next">&#10095;</label> <!-- ir a img2 -->
+              </div>
+
+              <!-- Cuando img2 está activo -->
+              <div class="nav img2-nav">
+                <label for="img1" class="prev">&#10094;</label> <!-- volver a img1 -->
+                <label for="img3" class="next">&#10095;</label> <!-- ir a img3 -->
+              </div>
+
+              <!-- Cuando img3 está activo -->
+              <div class="nav img3-nav">
+                <label for="img2" class="prev">&#10094;</label> <!-- volver a img2 -->
+                <label for="img4" class="next">&#10095;</label> <!-- ir a img4 -->
+              </div>
+
+              <!-- Cuando img4 está activo -->
+              <div class="nav img4-nav">
+                <label for="img3" class="prev">&#10094;</label> <!-- volver a img3 -->
+                <label for="img1" class="next">&#10095;</label> <!-- ir al primero -->
+              </div>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="images">
+              <label for="img1" class="image">
+                <img src="/assets/img/kuba/DSC00070.jpg" alt="Imagen 1">
+              </label>
+              <label for="img2" class="image">
+                <img src="/assets/img/kuba/DSC00052.jpg" alt="Imagen 2">
+              </label>
+              <label for="img3" class="image">
+                <img src="/assets/img/kuba/DSC00070.jpg" alt="Imagen 3">
+              </label>
+              <label for="img4" class="image">
+                <img src="/assets/img/kuba/DSC00052.jpg" alt="Imagen 4">
+              </label>
+            </div>
+          </div>
+
+          <div class="thumbnails">
+            <label for="img1">
+              <img src="/assets/img/kuba/DSC00070.jpg" alt="Imagen 1 Miniatura">
+            </label>
+            <label for="img2">
+              <img src="/assets/img/kuba/DSC00052.jpg" alt="Imagen 2 Miniatura">
+            </label>
+            <label for="img3">
+              <img src="/assets/img/kuba/DSC00070.jpg" alt="Imagen 3 Miniatura">
+            </label>
+            <label for="img4">
+              <img src="/assets/img/kuba/DSC00052.jpg" alt="Imagen 4 Miniatura">
+            </label>
+          </div>
+        </div>
+
+        <!-- <div class="images-litter">
+          <div class="columns">
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00070.jpg">
+            </div>
+            <div class="column">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+              <img id="image-border" src="/assets/img/kuba/DSC00052.jpg">
+            </div>
+          </div>
+        </div> -->
+        <div class="pick-box">
+          <div class="border-reserve">
+            <p id="text-reserve"><strong>Find the Perfect Pup for You<br>Just One Click Away!</strong></p>
+          </div>
+          <div class="buttons are-medium btn-reserve"><button class="button is-warning is-large is-focused">Reserve
+              now</button>
+          </div>
+        </div>
+        <hr>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/profile.php?id=61576214695417" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/leyvakennel" target="_blank"><ion-icon
+            name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="tiktok.com/@leyvakennel?_t=ZN-8vMOvzsi1Ys&_r=1" target="_blank"><ion-icon
+            name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/@LeyvaKennelTv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+    </ul>
+    <ul class="menu-footer">
+      <div class="footer-logo">
+        <img id="image1" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogs.html">Our Dogs</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="info.html">About the Breed</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="footer-logo">
+        <img id="image2" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+    </ul>
+    <p>@2025 American Bully XL / XXL Kennel | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
+
+</html>

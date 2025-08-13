@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/about-us.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/assets/img/logo-w.svg" alt="logo-white">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <ul class="dropdown-menu">
+            <li><a href="dogs.html#males">Males</a></li>
+            <li><a href="dogs.html#females">Females</a></li>
+            <li><a href="dogs.html#litters">Litters</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <div class="mobile-dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <div class="mobile-dropdown-content">
+            <a href="dogs.html#males">Males</a>
+            <a href="dogs.html#females">Females</a>
+            <a href="dogs.html#litters">Litters</a>
+          </div>
+        </div>
+        <a href="about-us.html">About Us</a>
+        <a href="info.html">About the Breed</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <section class=" hero is-fullheight">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="about-image">
+        <img src="/assets/img/kuba/kuba-about-us.png" alt="">
+      </div>
+      <div class="image-overlay"></div>
+      <div class="container has-text-centered">
+        <p class="title title-about" style="font-size: 4em;">About Us</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <article class="meet">
+      <div class="meet-title">
+        <h2>
+          Meet Us
+        </h2>
+      </div>
+      <div class="meet-text">
+
+        <h3 id="h3">
+          <img src="/assets/img/logo-b.svg" alt="logo-black" id="h3-logo">
+          Our Story
+        </h3>
+        <p>
+          <strong>Leyva Kennels</strong> was born from a genuine passion for animals—especially for the <strong>American
+            Bully
+            XL</strong>.
+          Ever since I was a child, I’ve had a deep connection with animals of all kinds: dogs, cats, horses, snakes…
+          But dogs have always been my favorite. Over six years ago, I became fascinated with this incredible breed and
+          dedicated
+          myself to learning everything about it: types, health, genetics, and care.
+          After two years of searching and studying, I found <strong>Hera</strong>, our first American Bully, from the
+          Giant
+          Bully Pitbulls bloodline—
+          and I instantly knew she was the one. Later came <strong>Kuba</strong>, and since then, this dream has only
+          grown
+          stronger.
+        </p>
+
+        <h3><ion-icon name="people-sharp"></ion-icon> A Family Project</h3>
+        <p>
+          Leyva Kennels is a <strong>family-run project</strong>. My parents and I share a deep love for animals, and we
+          each
+          contribute in our own way
+          to make sure our dogs are always happy, healthy, and loved. My father, although no longer practicing, is a
+          trained
+          veterinarian—
+          his knowledge and experience are essential to our daily routines and decisions.
+        </p>
+
+        <h3><ion-icon name="home-sharp"></ion-icon> How Our Dogs Live</h3>
+        <p>
+          Our dogs live <strong>with us</strong> in our home, in a peaceful countryside setting with access to open
+          fields and a
+          garden.
+          They go out daily to run, play, and explore. <strong>Hera</strong> loves running alongside the bike, while
+          <strong>Kuba</strong>
+          prefers a more relaxed stroll, sniffing everything along the way.
+          They’re raised around children and other animals, and socialized from day one.
+          <em>We don’t keep dogs in cages—we raise them in a loving family environment.</em>
+        </p>
+
+        <h3><ion-icon name="logo-react"></ion-icon> Breeding Philosophy</h3>
+        <p>
+          Our philosophy is simple: <strong>quality over quantity</strong>. We don’t breed just to breed. We can go
+          years
+          without a litter if the conditions aren’t right.
+          Every pairing is carefully studied, prioritizing <strong>health, structure, and temperament</strong>.
+          We aim to create our own healthy bloodline—massive but standard-compliant dogs that are noble, loyal, and
+          adaptable.
+          Perfect for both family life and protection work.
+        </p>
+
+        <h3><ion-icon name="prism-sharp"></ion-icon> Our Vision</h3>
+        <p>
+          We want our clients to feel what we feel—to fall in love with this breed and become as passionate about it as
+          we are.
+          Our dream is to grow responsibly, to add new dogs, participate in shows, and eventually become
+          <strong>certified
+            professional breeders</strong>,
+          especially in the K9 field. Everything we do, we do with love and purpose—for our dogs, for our clients, and
+          for the
+          future of the breed.
+        </p>
+      </div>
+      <hr>
+      <section class="meet">
+        <div class="meet-title">
+          <h2>Our Team</h2>
+        </div>
+
+        <div class="meet-text team-section">
+          <p>Meet the people behind Leyva Kennels – a dedicated family team working every day to bring up happy, healthy
+            American Bully XLs.</p>
+          <div class="card" id="card1">
+            <img src="img_avatar.png" alt="Avatar">
+            <div class="container">
+              <h4><b>Miranda Leyva</b></h4>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <img src="img_avatar.png" alt="Avatar">
+            <div class="container">
+              <h4><b>Javier Leyva</b></h4>
+              <p>Co. CEO & Veterinarian</p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <img src="img_avatar.png" alt="Avatar">
+            <div class="container">
+              <h4><b>Veronica Delgado</b></h4>
+              <p>Puppy Care Specialist</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/profile.php?id=61576214695417" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/leyvakennel" target="_blank"><ion-icon
+            name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="tiktok.com/@leyvakennel?_t=ZN-8vMOvzsi1Ys&_r=1" target="_blank"><ion-icon
+            name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/@LeyvaKennelTv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+    </ul>
+    <ul class="menu-footer">
+      <div class="footer-logo">
+        <img id="image1" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogs.html">Our Dogs</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="info.html">About the Breed</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="footer-logo">
+        <img id="image2" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+    </ul>
+    <p>@2025 American Bully XL / XXL Kennel | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
+
+</html>

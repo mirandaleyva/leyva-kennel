@@ -1,0 +1,161 @@
+:root {
+  --border-color: linear-gradient(to right, #ff0267 0%, #1b3039 100%);
+  --card-color: #222;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+  box-sizing: border-box;
+}
+
+.blog-article {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #21313ff2;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-bottom: 200px;
+  text-align: justify;
+}
+
+.grid-container{
+  margin: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  gap: 30px;
+  grid-auto-flow: dense;
+}
+
+.card:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+  transition: 3s ease;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* garantiza igual altura si el grid lo permite */
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* se adapta a la tarjeta */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h1,
+.card .text {
+  margin: 10px 0;
+}
+
+.card button {
+  margin-top: auto;
+  border: none;
+  outline: 0;
+  padding: 20px;
+  background-color: #ff0267;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button a{
+  color: #262a8a;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card h1 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #1b3039;
+}
+
+.text {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #1b3039;
+}
+
+strong {
+  color: #ff0267;
+}
+
+.title-blog {
+  background: var(--border-color);
+  max-width: 800px;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 100px auto;
+  display: block;
+}
+
+.title-blog h1{
+  background-color: white;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  font-size: 4em;
+  color: #21313ff2;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.hero-body{
+position: relative;
+  height: 70vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.blog-image img{
+ position: absolute;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.title-blog-h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Degradado negro transparente hacia arriba */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  pointer-events: none; /* Para que no bloquee clicks */
+} 

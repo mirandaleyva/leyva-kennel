@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="/assets/img/logo-w.svg" alt="logo-white"></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <ul class="dropdown-menu">
+            <li><a href="dogs.html#males">Males</a></li>
+            <li><a href="dogs.html#females">Females</a></li>
+            <li><a href="dogs.html#litters">Litters</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <div class="mobile-dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <div class="mobile-dropdown-content">
+            <a href="males.html">Males</a>
+            <a href="females.html">Females</a>
+            <a href="litters.html">Litters</a>
+          </div>
+        </div>
+        <a href="about-us.html">About Us</a>
+        <a href="info.html">About the Breed</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <section class=" hero is-fullheight">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="blog-image">
+        <img src="/assets/img/blog-articles/hero.jpg" alt="hero image blog">
+      </div>
+      <div class="image-overlay"></div>
+      <div class="container has-text-centered">
+        <p class="title title-blog-h1" style="font-size: 5em;">Blog</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <article class="blog">
+
+      <div class="title-blog">
+        <h1>Articles</h1>
+      </div>
+
+
+      <section class="blog-article">
+        <div class="grid-container">
+          <div class="card" id="card1">
+            <img src="/assets/img/blog-articles/old-dog.jpg" alt="old dog">
+            <h1>Alte Hunde: 8 Tipps für den richtigen Umgang mit Seniorhunden</h1>
+            <p class="text">
+              Hunde altern genau wie Menschen auch – und das <strong>sogar noch schneller</strong>. Aus dem
+              herumtobenden lebensfrohen
+              Vierbeiner wird
+              mit der Zeit ein <strong>Hundesenior</strong>, der nun alles etwas ruhiger angehen lässt.
+            </p>
+            <p><button><a
+                  href="https://www.tag24.de/c/alte-hunde-8-tipps-fuer-den-richtigen-umgang-mit-seniorhunden-3379687"
+                  target="_blank">To Article</a></button></p>
+          </div>
+          <div class="card" id="card3">
+            <img src="/assets/img/blog-articles/rottweiler.jpg" alt="rottweiler">
+            <h1>Zürcher Regierung verbietet den Kauf von Rottweilern</h1>
+            <p class="text">
+              Bereits ab kommendem Januar ist im Kanton<strong> Zürich</strong> der Kauf von Hunden der Rasse <strong>
+                Rottweiler verboten</strong>. Die
+              Regierung
+              reagiert damit auf zwei <strong>Beissvorfälle</strong>.
+            </p>
+            <p><button><a
+                  href="https://www.tagesanzeiger.ch/hundeattacken-zuerich-regierung-verbietet-kauf-von-rottweilern-924391048955"
+                  target="_blank">To Article</a></button></p>
+          </div>
+          <div class="card" id="card2">
+            <img src="/assets/img/blog-articles/dogfact.jpg" alt="dog-facts">
+            <h1>10 awesome dog facts!</h1>
+            <p class="text">
+              Ready to learn some paw-some dog facts? Then you’re in the right place! Join National Geographic Kids as
+              we get the
+              lowdown on our fur-tastic friends…
+            </p>
+            <p><button><a href="https://www.natgeokids.com/uk/discover/animals/general-animals/dog-facts/"
+                  target="_blank">To
+                  Article</a></button></p>
+          </div>
+          <div class="card" id="card4">
+            <img src="/assets/img/blog-articles/bully.jpg" alt="bully">
+            <h1>American bully: dog breed temperament and characteristics</h1>
+            <p class="text">
+              The American Bully is a highly social, affectionate, and <strong>soft-tempered</strong> dog breed, known
+              for its <strong>loyalty</strong>
+              and gentle
+              nature, making it an <strong>excellent</strong> companion for both solo owners seeking a devoted pet and
+              families looking
+              for a playful
+              and protective addition to their household.
+            </p>
+            <p><button><a href="https://www.betterpet.com/learn/american-bully" target="_blank">To Article</a></button>
+            </p>
+          </div>
+          <div class="card" id="card5">
+            <img src="/assets/img/blog-articles/puppy.jpg" alt="puppy">
+            <h1>How to socialise your puppy</h1>
+            <p class="text">
+              Like human children, puppies are <strong>not born</strong> with the social skills that they require to
+              live with their
+              family. Learn why
+              <strong>socialisation is important.</strong>
+            </p>
+            <p><button><a
+                  href="https://www.thekennelclub.org.uk/getting-a-dog/caring-for-your-new-puppy/what-is-puppy-socialisation/"
+                  target="_blank">To Article</a></button></p>
+          </div>
+          <div class="card" id="card6">
+            <img src="/assets/img/blog-articles/travel.jpg" alt="example">
+            <h1>Travelling with your dog</h1>
+            <p class="text">
+              Whether you go by car or public transport, we have advice to ensure that as lockdown eases you're fully
+              prepared and
+              don’t forget anything when travelling with your dog.
+            </p>
+            <p><button><a
+                  href="https://www.thekennelclub.org.uk/getting-a-dog/caring-for-your-new-puppy/travelling-with-your-dog/"
+                  target="_blank">To Article</a></button></p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/profile.php?id=61576214695417" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/leyvakennel" target="_blank"><ion-icon
+            name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="tiktok.com/@leyvakennel?_t=ZN-8vMOvzsi1Ys&_r=1" target="_blank"><ion-icon
+            name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/@LeyvaKennelTv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+    </ul>
+    <ul class="menu-footer">
+      <div class="footer-logo">
+        <img id="image1" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogs.html">Our Dogs</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="info.html">About the Breed</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="footer-logo">
+        <img id="image2" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+    </ul>
+    <p>@2025 American Bully XL / XXL Kennel | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
+
+</html>

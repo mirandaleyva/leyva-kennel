@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Dogs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/dogs.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/assets/img/logo-w.svg" alt="logo-white">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <ul class="dropdown-menu">
+            <li><a href="#males">Males</a></li>
+            <li><a href="#females">Females</a></li>
+            <li><a href="#litters">Litters</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <div class="mobile-dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <div class="mobile-dropdown-content">
+            <a href="#males">Males</a>
+            <a href="#females">Females</a>
+            <a href="#litters">Litters</a>
+          </div>
+        </div>
+        <a href="about-us.html">About Us</a>
+        <a href="info.html">About the Breed</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class=" hero is-fullheight">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="index-video">
+        <video src="/assets/videos/hera-kuba-dogs.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="container has-text-centered">
+        <p class="title title-index" style="font-size: 4em;">Our Dogs</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="dogs">
+    <article class="meet">
+      <div class="meet-title">
+        <h2>
+          Meet Our Dogs
+        </h2>
+      </div>
+      <div class="meet-text">
+        <img src="/assets/img/logo-b.svg" alt="logo black" id="logo-left">
+        <p>
+          At Leyva Kennels, we are proud to introduce our exceptional American Bully XL dogs. Here you will meet our
+          impressive
+          males, elegant females, and explore both our current and upcoming litters.
+
+          Each of our dogs has been carefully selected for their structure, temperament, and bloodline, ensuring the
+          quality and
+          love that define our kennel.
+
+          If you would like more information about any of our dogs or future litters, feel free to contact us by email
+          or
+          follow
+          us on our social media. We’re here to answer all your questions and help you find the perfect companion!
+        </p>
+        <img src="/assets/img/logo-b.svg" alt="logo black" id="logo-right">
+      </div>
+    </article>
+    <hr>
+
+    <article class="dogs-article">
+      <section class="males-section">
+        <div class="title-dogs">
+          <h2 id="males">Males</h2>
+        </div>
+        <div class="dog-card">
+          <h2 class="dog-name efecto-sombra">KUBA </h2>
+          <section class="section">
+            <div class="slider">
+              <input type="radio" name="radio-btn" id="radio1" hidden>
+              <input type="radio" name="radio-btn" id="radio2" hidden>
+              <input type="radio" name="radio-btn" id="radio3" hidden>
+              <input type="radio" name="radio-btn" id="radio4" hidden>
+              <!--slide-->
+              <div class="slide">
+                <div class="st first">
+                  <img src="/assets/img/kuba/kuba1.png" alt="kuba 1">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/kuba/kuba2.png" alt="kuba 2">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/kuba/kuba3.png" alt="kuba 3">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/kuba/kuba4.png" alt="kuba 4">
+                </div>
+              </div>
+              <!--Navegacion Auto-->
+              <div class="nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+                <div class="a-b4"></div>
+              </div>
+            </div>
+          </section>
+          <div class="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ullam suscipit laborum quibusdam,
+              accusantium libero, optio aperiam omnis, cumque perspiciatis consequatur? Eveniet dolore non excepturi
+              officiis voluptate, facilis nostrum iure!</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section class="males-section">
+        <div class="title-dogs">
+          <h2 id="females">Females</h2>
+        </div>
+        <div class="dog-card">
+          <h2 class="dog-name efecto-sombra">HERA </h2>
+          <section class="section">
+            <div class="slider">
+              <input type="radio" name="slider2_radio-btn" id="slider2_radio1" hidden>
+              <input type="radio" name="slider2_radio-btn" id="slider2_radio2" hidden>
+              <input type="radio" name="slider2_radio-btn" id="slider2_radio3" hidden>
+              <input type="radio" name="slider2_radio-btn" id="slider2_radio4" hidden>
+              <!--slide-->
+              <div class="slide">
+                <div class="st first">
+                  <img src="/assets/img/hera/hera-slide1.png" alt="hera 1">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/hera/hera2.png" alt="hera 2">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/hera/hera3.png" alt="hera 3">
+                </div>
+                <div class="st">
+                  <img src="/assets/img/hera/hera4.png" alt="hera 4">
+                </div>
+              </div>
+              <!--Navegacion Auto-->
+              <div class="nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+                <div class="a-b4"></div>
+              </div>
+            </div>
+          </section>
+          <div class="text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, qui aspernatur quo aliquid sed iste
+              officia, aut eum, iure labore eligendi voluptate facere porro inventore repellat eaque accusamus iusto.
+              Accusamus.</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section class="litters-section">
+        <div class="title-dogs">
+          <h2 id="litters">Litters</h2>
+        </div>
+        <div class="dog-card">
+          <h2 class="dog-name efecto-sombra">HERA X KUBA</h2>
+          <div class="imagen-principal-litters">
+            <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil modi voluptates ipsam excepturi, dolorum
+              commodi magni molestias eveniet beatae accusamus, cupiditate saepe atque vel laudantium sunt quaerat iste
+              cum consectetur.</p>
+          </div>
+          <div class="imagenes-litter">
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+            <div class="imagen-litter">
+              <img src="/assets/img/litters/litter-hero.jpg" alt="">
+            </div>
+          </div>
+          <div class="pick-box">
+            <div class="border-reserve">
+              <p id="text-reserve"><strong>Find the Perfect Pup for You<br>Just One Click Away!</strong></p>
+            </div>
+            <div class="buttons are-medium btn-reserve"><button class="button is-warning is-large is-focused">Reserve
+                now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/profile.php?id=61576214695417" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/leyvakennel" target="_blank"><ion-icon
+            name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="tiktok.com/@leyvakennel?_t=ZN-8vMOvzsi1Ys&_r=1" target="_blank"><ion-icon
+            name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/@LeyvaKennelTv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+    </ul>
+    <ul class="menu-footer">
+      <div class="footer-logo">
+        <img id="image1" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogs.html">Our Dogs</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="info.html">About the Breed</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="footer-logo">
+        <img id="image2" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+    </ul>
+    <p>@2025 American Bully XL / XXL Kennel | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      document.getElementById('slider2_radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 4000);
+  </script>
+</body>
+
+</html>

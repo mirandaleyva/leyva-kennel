@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="/assets/img/logo-w.svg" alt="logo-white">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <ul class="dropdown-menu">
+            <li><a href="dogs.html#males">Males</a></li>
+            <li><a href="dogs.html#females">Females</a></li>
+            <li><a href="dogs.html#litters">Litters</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="info.html">About the Breed</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="contact.html"><button>Contact</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <div class="mobile-dropdown">
+          <a href="dogs.html">Our Dogs</a>
+          <div class="mobile-dropdown-content">
+            <a href="males.html">Males</a>
+            <a href="females.html">Females</a>
+            <a href="litters.html">Litters</a>
+          </div>
+        </div>
+        <a href="about-us.html">About Us</a>
+        <a href="info.html">About the Breed</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <section class=" hero is-fullheight">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body hero-image">
+      <div class="gallery-image">
+        <img src="/assets/img/gallerie/kuba2.png" alt="image-gallery">
+      </div>
+      <div class="image-overlay"></div>
+      <div class="container has-text-centered">
+        <p class="title hero-gallery" style="font-size: 4em;">Foto Gallery</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="grid-container">
+      <div class="grid-item wide">
+        <img src="/assets/img/gallerie/hera5.png" alt="hera 5">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/img/gallerie/kuba1.png" alt="kuba 1">
+      </div>
+      <div class="grid-item wide tall">
+        <img src="/assets/img/gallerie/hera2.png" alt="hera 2">
+      </div>
+      <div class="grid-item wide">
+        <img src="/assets/img/gallerie/kuba2.png" alt="kuba 2">
+      </div>
+      <div class="grid-item wide">
+        <img src="/assets/img/gallerie/hera3.png" alt="hera 3">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/img/gallerie/kuba3.png" alt="kuba 3">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/img/gallerie/hera4.png" alt="hera 4">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/img/gallerie/kuba4.png" alt="kuba 4">
+      </div>
+      <div class="grid-item">
+        <img src="/assets/img/gallerie/hera1.png" alt="hera 1">
+      </div>
+      <div class="grid-item wide tall">
+        <img src="/assets/img/gallerie/kuba5.png" alt="kuba 5">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/profile.php?id=61576214695417" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/leyvakennel" target="_blank"><ion-icon
+            name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="tiktok.com/@leyvakennel?_t=ZN-8vMOvzsi1Ys&_r=1" target="_blank"><ion-icon
+            name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/@LeyvaKennelTv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+    </ul>
+
+    <ul class="menu-footer">
+      <div class="footer-logo">
+        <img id="image1" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogs.html">Our Dogs</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="info.html">About the Breed</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="footer-logo">
+        <img id="image2" src="/assets/img/abkc_logo.png" alt="abkc-logo">
+      </div>
+    </ul>
+
+    <p>@2025 American Bully XL / XXL Kennel | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
+
+</html>
